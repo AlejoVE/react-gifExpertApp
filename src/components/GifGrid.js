@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { GifGridItem } from './GifGridItem';
 
@@ -11,9 +12,7 @@ export const GifGrid = ({ category }) => {
 			<div className="card-grid">
 				{/* este simbolo && significa que si está cargando, ponga un párrago que diga loading
 				Si no está cargando, no hace nada */}
-				{loading && (
-					<p className="animate__animated animate__flash">Loading...</p>
-				)}
+				{loading && <p className="animate__animated animate__flash">Loading...</p>}
 				{
 					// prettier/ignore
 					images.map((img) => (
@@ -24,3 +23,7 @@ export const GifGrid = ({ category }) => {
 		</>
 	);
 };
+
+GifGrid.propTypes = {
+	category : PropTypes.string.isRequired,
+}

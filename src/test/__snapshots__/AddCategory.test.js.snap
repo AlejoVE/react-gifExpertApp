@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Tests in component  <AddCategory /> should throw an error if I dont pass  the setCategories property 1`] = `"received is not a function"`;
