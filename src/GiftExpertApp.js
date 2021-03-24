@@ -7,7 +7,7 @@ const GiftExpertApp = ({ defaultCategories = [] }) => {
 
 	return (
 		<>
-			<h2>GifExpertApp</h2>
+			<h2>GifExpertApp updated!!!</h2>
 			<AddCategory setCategories={setCategories} />
 			<hr />
 			<ol>
